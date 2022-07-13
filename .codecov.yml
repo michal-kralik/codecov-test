@@ -13,6 +13,7 @@ coverage:
       backend:
         flags:
           - back-cover
+        threshold: 15%
         # paths: 
         #  - back/
       frontend:
@@ -24,6 +25,7 @@ coverage:
 flags:
   back-cover:
     carryforward: true
+    threshold: 15%
   front-cover:
     carryforward: true
 
