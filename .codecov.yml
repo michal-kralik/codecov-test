@@ -1,3 +1,10 @@
+codecov:
+  notify:
+    wait_for_ci: false
+
+comment:
+  require_changes: true
+
 coverage:
   range: "20...70"
   status:
@@ -11,10 +18,10 @@ coverage:
       default:
         threshold: 15%
       backend:
-        flags:
-          - back-cover
         target: 10%
         threshold: 15%
+        flags:
+          - back-cover
         # paths: 
         #  - back/
       frontend:
@@ -26,8 +33,6 @@ coverage:
 flags:
   back-cover:
     carryforward: true
-    target: 10%
-    threshold: 15%
   front-cover:
     carryforward: true
 
