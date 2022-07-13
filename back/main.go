@@ -9,7 +9,7 @@ func calculateDiff() int {
 	if rand.Int() > 50 {
 		fmt.Println("Found ya!")
 		fmt.Println("Or not?!")
-		fmt.Println("Oh go")
+		fmt.Println("Oh go 1")
 	}
 
 	return 1
