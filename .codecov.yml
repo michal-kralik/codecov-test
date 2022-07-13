@@ -9,11 +9,15 @@ coverage:
       default:
         threshold: 15%
       backend:
-        paths: 
-         - back/
+        flags:
+          - back-cover
+        # paths: 
+        #  - back/
       frontend:
-        paths: 
-         - front/
+        flags:
+          - front-cover
+        # paths: 
+        #  - front/
 
 flag_management:
   default_rules:
