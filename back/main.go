@@ -10,6 +10,7 @@ func calculateDiff() int {
 		fmt.Println("Found ya!")
 		fmt.Println("Or not?!")
 		fmt.Println("Oh go 1")
+		fmt.Println("Oh go 2")
 	}
 
 	return 1
