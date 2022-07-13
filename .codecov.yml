@@ -6,6 +6,10 @@ coverage:
     project:
       default:
         threshold: 15%
+      backend:
+        paths: "back/"
+      frontend:
+        paths: "front/"
 
 flag_management:
   default_rules:
