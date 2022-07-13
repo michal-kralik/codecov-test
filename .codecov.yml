@@ -5,7 +5,7 @@ coverage:
       flag_coverage_not_uploaded_behavior: exclude
     
     # disabled for now until we agree on the thresholds
-    # patch: off
+    patch: off
     
     project:
       default:
@@ -24,3 +24,9 @@ coverage:
 flag_management:
   default_rules:
     carryforward: true
+    statuses:
+      - type: project
+        target: auto
+        threshold: 1%
+      - type: patch
+        target: 90%
