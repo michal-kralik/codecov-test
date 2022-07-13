@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func calculateDiff() int {
+	if rand.Int() > 50 {
+		fmt.Println("Found ya!")
+	}
+
 	return 1
 }
 
