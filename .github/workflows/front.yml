@@ -1,0 +1,56 @@
+name: Test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      - "back/**"
+
+jobs:
+  test:
+    name: Run tests
+    timeout-minutes: 30
+
+    strategy:
+      fail-fast: false
+      matrix:
+        go-version:
+          - 1.18.x
+        os: [ubuntu-latest]
+        may-fail: [false]
+
+    continue-on-error: ${{ matrix.may-fail }}
+    runs-on: ${{ matrix.os }}
+
+    env:
+      GOFLAGS: -v
+      GO_VERSION: ${{ matrix.go-version }}
+      WORKING_DIR: ${{ github.workspace }}
+
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+
+    steps:
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          path: ${{ env.WORKING_DIR }}
+
+      - name: Download Go modules
+        run: go mod download
+
+      - name: Run tests
+        run: |
+          cd front
+          go test -coverprofile=cover.out -covermode=count
+
+      - name: Upload coverage results
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./front/cover.out
+          flags: all,cover
+          functionalities: fix
+          fail_ci_if_error: false
