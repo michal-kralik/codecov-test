@@ -11,8 +11,6 @@ coverage:
       default:
         threshold: 15%
       backend:
-        # flags:
-        #   - back-cover
         paths: 
          - back/
       frontend:
