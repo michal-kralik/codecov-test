@@ -5,7 +5,7 @@ coverage:
       flag_coverage_not_uploaded_behavior: exclude
     project:
       default:
-        threshold: 5%
+        threshold: 15%
 
 flag_management:
   default_rules:
