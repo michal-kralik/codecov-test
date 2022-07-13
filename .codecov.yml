@@ -3,6 +3,8 @@ coverage:
   status:
     default_rules:
       flag_coverage_not_uploaded_behavior: exclude
+    # disabled for now until we agree on the thresholds
+    patch: off
     project:
       default:
         threshold: 15%
