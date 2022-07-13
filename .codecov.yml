@@ -1,5 +1,5 @@
 coverage:
-  range: "50...80"
+  range: "20...70"
   status:
     default_rules:
       flag_coverage_not_uploaded_behavior: exclude
