@@ -1,8 +1,8 @@
 coverage:
   range: "20...70"
   status:
-    # default_rules:
-    #   flag_coverage_not_uploaded_behavior: exclude
+    default_rules:
+      flag_coverage_not_uploaded_behavior: exclude
     
     # disabled for now until we agree on the thresholds
     patch: off

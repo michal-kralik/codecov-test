@@ -51,6 +51,6 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           file: ./back/cover.out
-          flags: all,back-cover
+          flags: back-cover
           functionalities: fix
           fail_ci_if_error: false
