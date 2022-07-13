@@ -23,15 +23,15 @@ coverage:
         # paths: 
         #  - front/
 
-flags:
-  back-cover:
-    carryforward: true
-  front-cover:
-    carryforward: true
-
-# flag_management:
-#   default_rules:
+# flags:
+#   back-cover:
 #     carryforward: true
+#   front-cover:
+#     carryforward: true
+
+flag_management:
+  default_rules:
+    carryforward: true
 #     statuses:
 #       - type: project
 #         target: auto
