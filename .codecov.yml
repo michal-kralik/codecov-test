@@ -1,0 +1,38 @@
+coverage:
+  range: "20...70"
+  status:
+    default_rules:
+      flag_coverage_not_uploaded_behavior: exclude
+    
+    # disabled for now until we agree on the thresholds
+    patch: off
+    
+    project:
+      default:
+        threshold: 15%
+      backend:
+        flags:
+          - back-cover
+        # paths: 
+        #  - back/
+      frontend:
+        flags:
+          - front-cover
+        # paths: 
+        #  - front/
+
+flags:
+  back-cover:
+    carryforward: true
+  front-cover:
+    carryforward: true
+
+# flag_management:
+#   default_rules:
+#     carryforward: true
+#     statuses:
+#       - type: project
+#         target: auto
+#         threshold: 1%
+#       - type: patch
+#         target: 90%
