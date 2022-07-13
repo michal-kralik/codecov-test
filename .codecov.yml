@@ -1,6 +1,12 @@
 coverage:
-  range: "60...100"
+  range: "50...80"
   status:
+    default_rules:
+      flag_coverage_not_uploaded_behavior: exclude
     project:
       default:
-        threshold: "5"
+        threshold: 5%
+
+flag_management:
+  default_rules:
+    carryforward: true
