@@ -1,10 +1,3 @@
-codecov:
-  notify:
-    wait_for_ci: false
-
-comment:
-  require_changes: true
-
 coverage:
   range: "20...70"
   status:
@@ -16,31 +9,29 @@ coverage:
     
     project:
       default:
-        threshold: 15%
+        threshold: 5%
       backend:
-        target: 10%
-        threshold: 1%
+        threshold: 5%
         flags:
           - back-cover
         # paths: 
         #  - back/
       frontend:
-        target: 10%
-        threshold: 1%
+        threshold: 5%
         flags:
           - front-cover
         # paths: 
         #  - front/
 
-flags:
-  back-cover:
-    carryforward: true
-  front-cover:
-    carryforward: true
-
-# flag_management:
-#   default_rules:
+# flags:
+#   back-cover:
 #     carryforward: true
+#   front-cover:
+#     carryforward: true
+
+flag_management:
+  default_rules:
+    carryforward: true
 #     statuses:
 #       - type: project
 #         target: auto
