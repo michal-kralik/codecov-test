@@ -4,6 +4,7 @@ import "fmt"
 
 func renderScreen() bool {
 	fmt.Println("Rendering")
+	fmt.Println("Rendering more")
 	return true
 }
 
