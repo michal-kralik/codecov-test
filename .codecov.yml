@@ -13,6 +13,7 @@ coverage:
       backend:
         flags:
           - back-cover
+        target: 10%
         threshold: 15%
         # paths: 
         #  - back/
