@@ -11,20 +11,28 @@ coverage:
       default:
         threshold: 15%
       backend:
-        paths: 
-         - back/
+        flags:
+          - back-cover
+        # paths: 
+        #  - back/
       frontend:
-        # flags:
-        #   - front-cover
-        paths: 
-         - front/
+        flags:
+          - front-cover
+        # paths: 
+        #  - front/
 
-flag_management:
-  default_rules:
+flags:
+  back-cover:
     carryforward: true
-    statuses:
-      - type: project
-        target: auto
-        threshold: 1%
-      - type: patch
-        target: 90%
+  front-cover:
+    carryforward: true
+
+# flag_management:
+#   default_rules:
+#     carryforward: true
+#     statuses:
+#       - type: project
+#         target: auto
+#         threshold: 1%
+#       - type: patch
+#         target: 90%
