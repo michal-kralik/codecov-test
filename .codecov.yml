@@ -3,21 +3,23 @@ coverage:
   status:
     default_rules:
       flag_coverage_not_uploaded_behavior: exclude
+    
     # disabled for now until we agree on the thresholds
     patch: off
+    
     project:
       default:
         threshold: 15%
       backend:
-        flags:
-          - back-cover
-        # paths: 
-        #  - back/
+        # flags:
+        #   - back-cover
+        paths: 
+         - back/
       frontend:
-        flags:
-          - front-cover
-        # paths: 
-        #  - front/
+        # flags:
+        #   - front-cover
+        paths: 
+         - front/
 
 flag_management:
   default_rules:
