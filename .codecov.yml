@@ -26,7 +26,7 @@ coverage:
         #  - back/
       frontend:
         # target: 30%
-        threshold: 1%
+        threshold: 5%
         flags:
           - front-cover
         # paths: 
