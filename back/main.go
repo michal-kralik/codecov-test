@@ -8,6 +8,7 @@ import (
 func calculateDiff() int {
 	if rand.Int() > 50 {
 		fmt.Println("Found ya!")
+		fmt.Println("Or not?!")
 	}
 
 	return 1

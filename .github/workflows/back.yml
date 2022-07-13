@@ -4,8 +4,8 @@ on:
     branches:
       - main
   pull_request:
-    paths-ignore:
-      - "front/**"
+    paths:
+      - "back/**"
 
 jobs:
   test:
