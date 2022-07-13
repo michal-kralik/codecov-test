@@ -16,17 +16,13 @@ coverage:
     
     project:
       default:
-        threshold: 15%
+        threshold: 5%
       backend:
-        target: 10%
-        threshold: 1%
         flags:
           - back-cover
         # paths: 
         #  - back/
       frontend:
-        # target: 30%
-        threshold: 5%
         flags:
           - front-cover
         # paths: 
